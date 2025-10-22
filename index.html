@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Health, Wellness & Psychology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>🌿 Indian Health, Wellness & Psychology</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ayurveda.html">Ayurveda</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="psychology.html">Psychology</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to the Wellness Portal</h2>
+    <p>Balance your body, mind, and soul through ancient Indian wisdom and modern psychological awareness.</p>
+  </section>
+
+  <section class="quote-section">
+    <h3>Daily Wellness Quote</h3>
+    <p id="quote"></p>
+  </section>
+
+  <section class="bmi-section">
+    <h3>💪 BMI Calculator</h3>
+    <label>Weight (kg): <input type="number" id="weight" /></label>
+    <label>Height (cm): <input type="number" id="height" /></label>
+    <button onclick="calculateBMI()">Calculate</button>
+    <p id="bmi-result"></p>
+  </section>
+
+  <section class="mood-section">
+    <h3>😊 Mood Tracker</h3>
+    <p>How are you feeling today?</p>
+    <div class="moods">
+      <button onclick="selectMood('Happy')">😀 Happy</button>
+      <button onclick="selectMood('Calm')">😌 Calm</button>
+      <button onclick="selectMood('Sad')">😔 Sad</button>
+      <button onclick="selectMood('Stressed')">😣 Stressed</button>
+    </div>
+    <p id="mood-output"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Indian Health, Wellness & Psychology | Educational Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
